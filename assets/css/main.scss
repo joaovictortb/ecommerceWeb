@@ -212,7 +212,7 @@ h1,h2,h3,h4,h5 {
     border-radius: 50px;
     padding: 11px 20px;
     font-weight: 500;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     @include breakpoint(phone) {
       font-size: 13px;
       padding: 15px 25px;
@@ -234,14 +234,14 @@ h1,h2,h3,h4,h5 {
     font-size: 16px;
   }
   svg {
-    width: 38px;
-    height: 28px;
+    width: 220px;
+    height: 180px;
     fill: currentColor;
-    object-fit: contain;
+    object-fit: cover;
     margin-right: 15px;
     @include breakpoint(phone) {
-      width: 45px;
-      height: 35px;
+      width: 150px;
+      height: 180px;
     }
   }
 }
@@ -344,6 +344,9 @@ h1,h2,h3,h4,h5 {
       width: auto;
       border: none;
       background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .site-nav__btn {
       padding: 13px 18px;
@@ -658,7 +661,7 @@ h1,h2,h3,h4,h5 {
         margin-bottom: 45px;
         @include breakpoint(phone) {
           font-size: 64px;
-          width: 600px;
+          width: 700px;
         }
       }
       .btn-shop {
@@ -954,7 +957,7 @@ h1,h2,h3,h4,h5 {
       padding: 40px 60px 40px 60px;
     }
     @include breakpoint(tablet-lg) {
-      padding: 80px 125px 80px 105px;
+      padding: 100px 145px 100px 130px; 
       display: flex;
       align-items: center;
     }
@@ -1157,7 +1160,8 @@ h1,h2,h3,h4,h5 {
 .shop-data-items {
   @include breakpoint(phone) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    // justify-content: space-between;
   }
   li {
     text-align: center;
@@ -1168,9 +1172,9 @@ h1,h2,h3,h4,h5 {
       text-align: left;
     }
     i {
-      height: 70px;
-      width: 70px;
-      font-size: 20px;
+      height: 120px;
+      width: 120px;
+      font-size: 40px;
       flex-shrink: 0;
       display: flex;
       color: #000;
@@ -1199,8 +1203,8 @@ h1,h2,h3,h4,h5 {
     }
     &:hover {
       i {
-        color: var(--color-orange);
-        background: var(--color-orange-light);
+        color: #fff;
+        background: var(--color-blue-light);
       }
     }
   }
@@ -2755,7 +2759,7 @@ h1,h2,h3,h4,h5 {
       display: flex;
       align-items: center;
       .checkout-item__data {
-        width: 110px;
+        width: 510px;
         h3 {
           font-weight: 600;
           font-size: 14px;

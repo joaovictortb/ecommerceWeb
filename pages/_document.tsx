@@ -6,7 +6,7 @@ import Document, {
   DocumentInitialProps,
   DocumentContext,
 } from "next/document";
-import { GA_TRACKING_ID } from "../utils/gtag";
+// import { GA_TRACKING_ID } from "../utils/gtag";
 
 interface DocumentProps extends DocumentInitialProps {
   isProduction: boolean;

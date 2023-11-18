@@ -67,7 +67,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
         <nav
           ref={navRef}
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}
-          style={{ display: "flex", flexDirection: "row", marginLeft: 120 }}
+          style={{ display: "flex", flexDirection: "row", marginLeft: 121 }}
         >
           <Link href="/products">
             <a>SOBRE</a>
